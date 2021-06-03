@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test # memory mode
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      use-new-id-generator-mappings: false  # Hibernate id 생성전략 수용 여부 - false 설정시 mysql에서 @GeneratedValue 값으로 IDENTITY가 선택된다.
+    properties:
+      hibernate:
+        format_sql: true
+#        dialect: org.hibernate.dialect.MySQL57Dialect
+#        storage_engine: innodb
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
