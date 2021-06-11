@@ -29,7 +29,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.7.1' // jpa sql parameter mapping
+    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.7.1' // jpa sql parameter mapping
 
     //JUnit4 동작하도록 추가
 //    testImplementation("org.junit.vintage:junit-vintage-engine") {
